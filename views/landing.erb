@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Article List</title>
+  </head>
+
+  <body>
+    <h1>Article List</h1>
+
+    <ul>
+      <% news.each do |x| %>
+      <h2><%= x["article"] %></h2>
+      <li> Article Name: <%= x["article"] %> | Link: <a href="<%= x["url"]%>"><%= x["url"] %></a> | Description: <%= x["description"] %> </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
